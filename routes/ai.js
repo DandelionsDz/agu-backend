@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
             let data = await getJsonResponeFromPayload(prompt, AI_SERVER_GLOBAL);
             res.send(data);
         } catch {
-            res.send({ "status": "501" });
+            res.send({ "status": "501s" });
         }
     }
 });
