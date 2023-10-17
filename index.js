@@ -1,11 +1,11 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
 const app = express();
 const port = 3000;
 
-const defaultPage = require('./routes/default_page');
-const question = require('./routes/question');
-const ai = require('./routes/ai');
+const defaultPage = require("./routes/default_page");
+const question = require("./routes/question");
+const ai = require("./routes/ai");
 
 app.use(cors());
 app.use(express.json());

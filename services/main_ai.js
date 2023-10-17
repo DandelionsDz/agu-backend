@@ -39,7 +39,6 @@ class Utils {
 
     return message;
   }
-
 }
 
 class AI {
@@ -69,9 +68,7 @@ class AI {
       .then((text) => text.split("\n"));
   }
 
-  static async createChatRoom() {
-
-  }
+  static async createChatRoom() {}
 }
 
 exports.mainAI = AI;

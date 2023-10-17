@@ -53,6 +53,20 @@ const data = [
     },
     created_at: "2021-04-01T10:00:00Z",
   },
+  {
+    id: 4,
+    title: "C++ program",
+    content:
+      "cách viet chuong trinh c++ de tinh dao ham cua mot ham so",
+    views: 110,
+    answers: [],
+    author: {
+      id: 1,
+      username: "admi2n",
+      email: "gamemo2d@pro",
+    },
+    created_at: "2021-04-01T10:00:00Z",
+  },
 ];
 
 router.get("/", (req, res) => {
