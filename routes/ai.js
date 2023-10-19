@@ -1,22 +1,19 @@
 const express = require("express");
 const { getJsonResponeFromPayload } = require("../utils/ai.utils");
 const { AI_SERVER_VN, AI_SERVER_GLOBAL } = require("../consts/ai_server");
+const herc = require("../services/hercai_ai");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
   let prompt = req.query.prompt;
 
   try {
-    let data = await getJsonResponeFromPayload(prompt, AI_SERVER_GLOBAL);
-    res.send(data);
+    let answer = (await herc.question({ model: "v3-beta", content: prompt }))
+      .reply;
+    let respone = { from: "herc-gpt4", answer: answer };
+    res.send(respone);
   } catch (error) {
-    console.log(error);
-    try {
-      let data = await getJsonResponeFromPayload(prompt, AI_SERVER_VN);
-      res.send(data);
-    } catch {
-      res.send({ status: 501 });
-    }
+    res.status(500).send(error);
   }
 });
 

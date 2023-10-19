@@ -16,7 +16,7 @@ class AI {
         "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-origin",
         cookie:
-          "_ga=GA1.1.1616556768.1697542046; _ga_3J2500708C=GS1.1.1697542045.1.0.1697542045.0.0.0; dom3ic8zudi28v8lr6fgphwffqoz0j6c=2a6fe89a-868f-4951-8db2-7a613a84dc04%3A3%3A1; session=eyJ1c2VyX2lkIjogImpxeTlhcDljMnVqZ3lzdjR1In0=.ZS5vow.sywMgGbNRfuATHS6lJTp8J1fAV0",
+          "_ga=GA1.1.1616556768.1697542046; dom3ic8zudi28v8lr6fgphwffqoz0j6c=2a6fe89a-868f-4951-8db2-7a613a84dc04%3A3%3A1; cf_clearance=tmKcAv0zgKJ_vQWA9V4EEOmxkFIbqlmM08OU0CovTSU-1697627389-0-1-c39b7481.8172e7c9.9eaf3dfb-160.2.1697627389; _ga_3J2500708C=GS1.1.1697627227.2.1.1697627485.0.0.0; session=eyJ1c2VyX2lkIjogIm11YWhhY2tmZkBnbWFpbC5jb20iLCAidXNlciI6IHsiaWQiOiAibXVhaGFja2ZmQGdtYWlsLmNvbSIsICJ2ZXJpZmllZF9lbWFpbCI6IHRydWUsICJuYW1lIjogIkZhY2Vib29rIFNlY3VyZSIsICJnaXZlbl9uYW1lIjogIkZhY2Vib29rIiwgImZhbWlseV9uYW1lIjogIlNlY3VyZSIsICJwaWN0dXJlIjogImh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tQeHU0aFhpQWFMUmZPVVdjaFQyMTlpbDZKRUQ3NkY1QXJSZkp3ano3LT1zOTYtYyIsICJsb2NhbGUiOiAidmkifSwgImxvZ2luX2RhdGEiOiB7ImlkIjogIm11YWhhY2tmZkBnbWFpbC5jb20iLCAidmVyaWZpZWRfZW1haWwiOiB0cnVlLCAibmFtZSI6ICJGYWNlYm9vayBTZWN1cmUiLCAiZ2l2ZW5fbmFtZSI6ICJGYWNlYm9vayIsICJmYW1pbHlfbmFtZSI6ICJTZWN1cmUiLCAicGljdHVyZSI6ICJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLUHh1NGhYaUFhTFJmT1VXY2hUMjE5aWw2SkVENzZGNUFyUmZKd2p6Ny09czk2LWMiLCAibG9jYWxlIjogInZpIn19.ZS-9cQ.n2auJ-gusuNW3CLNXqlhNS4euwE",
         Referer: "https://chat.chatgptdemo.net/",
         "Referrer-Policy": "strict-origin-when-cross-origin",
       },
@@ -42,8 +42,6 @@ class AI {
         "sec-fetch-dest": "empty",
         "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-origin",
-        cookie:
-          "_ga=GA1.1.1616556768.1697542046; _ga_3J2500708C=GS1.1.1697542045.1.0.1697542045.0.0.0; dom3ic8zudi28v8lr6fgphwffqoz0j6c=2a6fe89a-868f-4951-8db2-7a613a84dc04%3A3%3A1; session=eyJ1c2VyX2lkIjogImpxeTlhcDljMnVqZ3lzdjR1In0=.ZS5vow.sywMgGbNRfuATHS6lJTp8J1fAV0",
       },
       referrerPolicy: "no-referrer",
       body: '{"user_id":"hfrgwhyciupb3i2ho"}',
@@ -53,7 +51,7 @@ class AI {
 }
 
 class Utils {
-  static getQuestion(content, chatRoomId = "652e6f9fc728f26aae4b1a01") {
+  static getQuestion(content, chatRoomId = "652fbd6319c50e5294b8746c") {
     let payload = {
       question: content,
       chat_id: chatRoomId,
