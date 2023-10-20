@@ -68,7 +68,7 @@ const data = [
     created_at: "2021-04-01T10:00:00Z",
   },
   {
-    id: 1,
+    id: 5,
     title: "How to create a new Django project?",
     content:
       "I'm new to Django and would like to know how to create a new Django project. Thanks! I'm new to Django and would like to know how to create a new Django project. Thanks!",
@@ -92,7 +92,7 @@ const data = [
     created_at: "2020-04-01T10:00:00Z",
   },
   {
-    id: 2,
+    id: 6,
     title: "Toán A1",
     content: "f(x) x->2 of sin(x)/x",
     views: 110,
@@ -105,7 +105,7 @@ const data = [
     created_at: "2021-04-01T10:00:00Z",
   },
   {
-    id: 3,
+    id: 7,
     title: "cách phạm trù cơ bản trong triết học mac-lenin",
     content:
       "cách phạm trù cơ bản trong triết học mac-lenin, trở lời 1 cách chi tiết giúp mình với",
@@ -119,7 +119,7 @@ const data = [
     created_at: "2021-04-01T10:00:00Z",
   },
   {
-    id: 4,
+    id: 8,
     title: "C++ program",
     content: "viết 2 chương trình lisp cơ bản",
     views: 110,
@@ -133,7 +133,7 @@ const data = [
     created_at: "2021-04-01T10:00:00Z",
   },
   {
-    id: 1,
+    id: 9,
     title: "How to create a new Django project?",
     content:
       "I'm new to Django and would like to know how to create a new Django project. Thanks! I'm new to Django and would like to know how to create a new Django project. Thanks!",
@@ -157,7 +157,7 @@ const data = [
     created_at: "2020-04-01T10:00:00Z",
   },
   {
-    id: 2,
+    id: 10,
     title: "Toán A1",
     content: "f(x) x->2 of sin(x)/x",
     views: 110,
@@ -170,7 +170,7 @@ const data = [
     created_at: "2021-04-01T10:00:00Z",
   },
   {
-    id: 3,
+    id: 11,
     title: "cách phạm trù cơ bản trong triết học mac-lenin",
     content:
       "cách phạm trù cơ bản trong triết học mac-lenin, trở lời 1 cách chi tiết giúp mình với",
@@ -184,7 +184,7 @@ const data = [
     created_at: "2021-04-01T10:00:00Z",
   },
   {
-    id: 4,
+    id: 41,
     title: "C++ program",
     content: "viết 2 chương trình lisp cơ bản",
     views: 110,
@@ -205,6 +205,10 @@ router.get("/", (req, res) => {
 
 router.get("/:id", (req, res) => {
   res.send(data.find((x) => x.id == req.params.id));
+});
+
+router.post("/", (req, res) => {
+  console.log(req.body);
 });
 
 module.exports = router;
